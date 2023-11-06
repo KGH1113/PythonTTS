@@ -27,6 +27,13 @@ def text_to_speech():
 app = tk.Tk()
 app.title("Text-to-Speech Program (Korean)")
 
+# Adjust window size
+app.geometry("400x400")
+
+# Create Label
+label = tk.Label(app, text="안내맨트를 입력하세요:", width=25, height=5, relief="solid")
+label.pack()
+
 # Create and configure a text entry field
 text_entry = tk.Entry(app, width=50)
 text_entry.pack(pady=10)
